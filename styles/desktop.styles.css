@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Amazon Ember", Ariel, sans-serif;
+}
+
+body {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--primary-color);
+}
+
+.content-container {
+    margin: 0 20rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fill-max-width {
+    width: 100%;
+    align-self: center;
+}
+
+/* Utilities */
+
+.align-row {
+    display: flex;
+}
+
+.align-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-left {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+.align-center {
+    display: flex;
+    justify-content: center;
+    flex-grow: 10;
+}
+
+.larg-txt {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.small-txt {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: fit-content(20px) repeat(2, 1fr) 0.5fr;
+}

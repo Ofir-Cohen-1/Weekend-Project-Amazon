@@ -1,15 +1,1085 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello world</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/54d7603b2e.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="./styles/normalize.css" />
+        <link rel="stylesheet" href="./styles/fonts.styles.css" />
+        <link rel="stylesheet" href="./styles/colors.styles.css" />
+        <link rel="stylesheet" href="./styles/desktop.styles.css" />
+        <link rel="stylesheet" href="./styles/navbar/desktop.navbar.css" />
+        <link rel="stylesheet" href="./styles/main/desktop.main.css" />
+        <link
+            rel="stylesheet"
+            href="./styles/freq-bought/desktop.freq-bought.css"
+        />
+        <link rel="stylesheet" href="./styles/carusela/desktop.carusela.css" />
+        <link
+            rel="stylesheet"
+            media="(max-width: 1440px)"
+            href="./styles/mobile.styles.css"
+        />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="./assets/images/amazon-ico.ico"
+        />
 
-    <script src="/app.js"></script>
-</body>
+        <title>
+            Pokemon Pikachu 8" Plush - Officially Licensed and Stuffed Animal Material
+        </title>
+    </head>
+    <body>
+        <nav class="navbar align-col">
+            <section class="navbar__top align-row">
+                <div class="navbar-left-top align-row align-left">
+                    <a href="#" class="logo display-border-hover">
+                        <img src="./assets/images/logo.png" alt="" />
+                    </a>
+                    <div
+                        class="is-deliver align-row display-border-hover desktop-only"
+                    >
+                        <img
+                            src="./assets/images/location.png"
+                            alt=""
+                            class="location"
+                        />
+                        <a href="#" class="align-col deliver-txt">
+                            <span class="small-txt">Deliver to</span>
+                            <span class="larg-txt">Israel</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="search-bar align-center">
+                    <form class="align-row">
+                        <div class="search-bar__search-left">
+                            <label
+                                for="search-filter"
+                                id="search-filter"
+                            ></label>
+                            <select name="search-filter" id="search-filter">
+                                <option
+                                    selected="selected"
+                                    value="search-filter-all"
+                                >
+                                    All
+                                </option>
+                                <option value="search-filter-all-dep">
+                                    All Departments
+                                </option>
+                                <option value="search-filter-crafts">
+                                    Arts & Crafts
+                                </option>
+                                <option value="search-filter-automotive">
+                                    AUtomptive
+                                </option>
+                                <option value="search-filter-baby">Baby</option>
+                                <option value="search-filter-beauty">
+                                    Beauty & Personal Care
+                                </option>
+                                <option value="search-filter-books">
+                                    Books
+                                </option>
+                                <option value="search-filter-boys">
+                                    Boys' Fashion
+                                </option>
+                                <option value="search-filter-computer">
+                                    Computers
+                                </option>
+                                <option value="search-filter-deals">
+                                    Deals
+                                </option>
+                                <option value="search-filter-music">
+                                    Digital Music
+                                </option>
+                                <option value="search-filter-electronic">
+                                    Electronics
+                                </option>
+                                <option value="search-filter-girls">
+                                    Girls' Fashion
+                                </option>
+                                <option value="search-filter-health">
+                                    Health & Household
+                                </option>
+                                <option value="search-filter-home">
+                                    Home & Kitchen
+                                </option>
+                                <option value="search-filter-industrial">
+                                    Industrial & Scientific
+                                </option>
+                                <option value="search-filter-kindle">
+                                    Kindle Store
+                                </option>
+                                <option value="search-filter-luggage">
+                                    Luggage
+                                </option>
+                                <option value="search-filter-men">
+                                    Men's Fashion
+                                </option>
+                                <option value="search-filter-movies">
+                                    Movies & TV
+                                </option>
+                                <option value="search-filter-music-cd-vinyl">
+                                    Music, CDs & Vinyl
+                                </option>
+                                <option value="search-filter-pet">
+                                    Pet Supplies
+                                </option>
+                                <option value="search-filter-prime-video">
+                                    Prime Video
+                                </option>
+                                <option value="search-filter-software">
+                                    Software
+                                </option>
+                                <option value="search-filter-sports">
+                                    Sports & Outdoors
+                                </option>
+                                <option value="search-filter-tools">
+                                    Tools & Home Improvement
+                                </option>
+                                <option value="search-filter-toys">
+                                    Toys & Games
+                                </option>
+                                <option value="search-filter-video-games">
+                                    Video Games
+                                </option>
+                                <option value="search-filter-women">
+                                    Women's Fashion
+                                </option>
+                            </select>
+                        </div>
+                        <div class="search-bar__search-fill">
+                            <label for="text" id="search-fill"></label>
+                            <input type="text" name="text" id="text" />
+                        </div>
+                        <div class="search-bar__search-right">
+                            <a href="#" class="bg-orange">
+                                <div class="search-sprite"></div>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="right-top-navbar align-row align-right">
+                    <a href="" class="language display-border-hover">
+                        <div></div>
+                    </a>
+                    <a
+                        href="#"
+                        class="sign-in align-col display-border-hover white-txt"
+                    >
+                        <span class="small-txt">Hello, Sign in</span>
+                        <span class="larg-txt">Account & Lists</span>
+                    </a>
+                    <a
+                        href="#"
+                        class="returns-and-orders align-col display-border-hover white-txt"
+                    >
+                        <span class="small-txt">Returns</span>
+                        <span class="larg-txt">& Orders</span>
+                    </a>
+                    <a
+                        href="#"
+                        class="cart align-row display-border-hover white-txt"
+                    >
+                        <div class="cart-sprite">
+                            <span class="cart-load">0</span>
+                        </div>
+                        <span class="larg-txt">Cart</span>
+                    </a>
+                </div>
+            </section>
+            <div class="search-bar align-center mobile-only">
+                <form class="align-row">
+                    <div class="search-bar__search-fill">
+                        <label for="text" id="search-fill"></label>
+                        <input type="text" name="text" id="text" />
+                    </div>
+                    <div class="search-bar__search-right">
+                        <a href="#" class="bg-orange">
+                            <div class="search-sprite"></div>
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <section class="navbar__bottom">
+                <div class="deliver-mobile-only">
+                    <div class="is-deliver align-row">
+                        <img
+                            src="./assets/images/location.png"
+                            alt=""
+                            class="location"
+                        />
+                        <div class="deliver-txt">
+                            <span class="small-txt">Deliver to Israel</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="align-row desktop-only">
+                    <li class="align-row navbar-bottom-el display-border-hover">
+                        <a href="#" class="hamburger align-row">
+                            <div class="hamburger-sprite"></div>
+                            <div class="hamburger-menu-text">All</div>
+                        </a>
+                    </li>
+                    <li class="navbar-bottom-el display-border-hover">
+                        <a href="#">Today's Deals</a>
+                    </li>
+                    <li class="navbar-bottom-el display-border-hover">
+                        <a href="#">Customer Service</a>
+                    </li>
+                    <li class="navbar-bottom-el display-border-hover">
+                        <a href="#">Registry</a>
+                    </li>
+                    <li class="navbar-bottom-el display-border-hover">
+                        <a href="#">Gift Cards</a>
+                    </li>
+                    <li class="navbar-bottom-el display-border-hover">
+                        <a href="#">Sell</a>
+                    </li>
+                    <li class="navbar-bottom-el display-border-hover">
+                        <a href="#">Local Delivery in Israel</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="navbar__bottom-secondary">
+                <ul class="align-row">
+                    <li class="navbar-bottom-secondary-el orange-hover">
+                         <strong><a href="#">Toys & Games</a></strong>
+                    </li>
+                    <li class="navbar-bottom-secondary-el orange-hover">
+                        <a href="#">Holiday Toy List</a>
+                    </li>
+                    <li class="navbar-bottom-secondary-el orange-hover">
+                        <a href="#">Shop Toys by Age</a>
+                    </li>
+                    <li class="navbar-bottom-secondary-el orange-hover">
+                        <a href="#">Shop Toys by Character</a>
+                    </li>
+                    <li class="navbar-bottom-secondary-el orange-hover">
+                        <a href="#">Shop Best Selling Toys</a>
+                    </li>
+                    <li class="navbar-bottom-secondary-el orange-hover">
+                        <a href="#">Shop Newly Released Toys</a>
+                    </li>
+                    <li class="navbar-bottom-secondary-el orange-hover">
+                        <a href="#">Shop Amazon Exclusive Toys</a>
+                    </li>
+                    <li class="navbar-bottom-secondary-el orange-hover">
+                        <a href="#">Shop Toys Deals</a>
+                    </li>
+                    <li class="navbar-bottom-secondary-el orange-hover">
+                        <a href="#">Create a Birthday Gift List</a>
+                    </li>
+                    <li class="navbar-bottom-secondary-el orange-hover">
+                        <a href="#">Create a Holiday Gift List</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+
+        <!-- Main- product information -->
+        <div class="align-row content-container">
+            <div>
+                <div class="breadcrumbs-container">
+                    <ul class="breadcrumbs-list align-row">
+                        <li class="breadcrumbs-divider"><span> 	
+                            &#8249 </span></li>
+                        <li class="breadcrumbs-item underline-hover">
+                            <a href="#">Back to results</a>
+                        </li>
+                    </ul>
+                </div>
+                <main class="main grid-container main-relative">
+                    <div class="main__preview-imgs align-col">
+                        <a href="#" class="img-container" id="img-preview-1">
+                            <img
+                                src="./assets/images/item1-preview1.jpg"
+                                alt=""
+                                id="preview-1"
+                            />
+                        </a>
+                        <a href="#" class="img-container" id="img-preview-2">
+                            <img
+                                src="./assets/images/item1-preview2.jpg"
+                                alt=""
+                                id="preview-2"
+                            />
+                        </a>
+                        <a href="#" class="img-container" id="img-preview-3">
+                            <img
+                                src="./assets/images/item1-preview3.jpg"
+                                alt=""
+                                id="preview-3"
+                            />
+                        </a>
+                        <a href="#" class="img-container" id="img-preview-4">
+                            <img
+                                src="./assets/images/item1-preview4.jpg"
+                                alt=""
+                                id="preview-4"
+                            />
+                        </a>
+                        <a href="#" class="img-container" id="img-preview-5">
+                            <img
+                                src="./assets/images/item1-preview5.jpg"
+                                alt=""
+                                id="preview-5"
+                            />
+                        </a>
+                        <a href="#" class="img-container" id="img-preview-6">
+                            <img
+                                src="./assets/images/item1-preview6.jpg"
+                                alt=""
+                                id="preview-6"
+                            />
+                        </a>
+                    </div>
+
+                    <div class="main__big-img-container">
+                        <img
+                            src="./assets/images/item1-big1.jpg"
+                            alt=""
+                            id="big-img"
+                        />
+                    </div>
+
+                    <div class="main__product-description-container">
+                        <div class="prod-name-and-rating">
+                            <div class="name">
+                                <p>
+                                    Pokemon Pikachu 8" Plush - Officially Licensed and Stuffed Animal Material
+                                </p>
+                            </div>
+                            <div class="brand">
+                                <a href="#" class="red-hover">Brand: Pokemon</a>
+                            </div>
+                            <div class="rating align-row">
+                                <div class="stars"></div>
+                                <div class="num-users-rate">
+                                    <a href="#" class="red-hover"
+                                        >4,879 ratings</a
+                                    >
+                                    <span> | </span>
+                                    <a href="#" class="red-hover"
+                                        >3 answered questions</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="amazon-choice align-row">
+                                <div class="choice">
+                                    <span class="amazon">Amazon's</span>
+                                    <span class="orange-txt">Choice</span>
+                                </div>
+                                <div class="product-section">
+                                    for "<a href="#" class="red-hover"
+                                        >pikachu pokemon plush</a
+                                    >"
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="availability-and-specs">
+                            <div class="availabilty"></div>
+                            <div class="price">
+                                <!-- <div class="past-price-container align-row">
+                                    <div class="past-price-container">
+                                        <span class="price-category">Was:</span>
+                                        <span class="past-price">$17.99</span>
+                                        <a href="#">
+                                            <svg
+                                                width="12"
+                                                height="12"
+                                                viewBox="0 0 12 12"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M6 0.210938C2.78906 0.210938 0.1875 2.81438 0.1875 6.02344C0.1875 9.2325 2.78906 11.8359 6 11.8359C9.21094 11.8359 11.8125 9.23438 11.8125 6.02344C11.8125 2.8125 9.21094 0.210938 6 0.210938ZM6 1.99945C6.22107 1.99945 6.43717 2.06501 6.62098 2.18783C6.80479 2.31064 6.94805 2.48521 7.03265 2.68945C7.11725 2.89369 7.13939 3.11843 7.09626 3.33525C7.05313 3.55207 6.94668 3.75123 6.79036 3.90755C6.63404 4.06386 6.43488 4.17032 6.21806 4.21344C6.00124 4.25657 5.7765 4.23444 5.57226 4.14984C5.36802 4.06524 5.19346 3.92198 5.07064 3.73817C4.94782 3.55436 4.88227 3.33825 4.88227 3.11719C4.88227 2.82075 5.00003 2.53645 5.20964 2.32683C5.41926 2.11721 5.70356 1.99945 6 1.99945V1.99945ZM6.89414 9.78961C6.89303 9.86471 6.86237 9.93635 6.8088 9.98899C6.75523 10.0416 6.68308 10.0711 6.60797 10.0709H5.38289C5.34618 10.0708 5.30985 10.0634 5.276 10.0492C5.24216 10.035 5.21147 10.0142 5.18571 9.98802C5.15994 9.96187 5.13962 9.93087 5.12592 9.89681C5.11221 9.86275 5.10539 9.82632 5.10586 9.78961V5.8575C5.10543 5.8208 5.11226 5.78438 5.12598 5.75033C5.1397 5.71629 5.16002 5.6853 5.18578 5.65915C5.21153 5.63301 5.24221 5.61222 5.27604 5.59799C5.30987 5.58376 5.34619 5.57637 5.38289 5.57625H6.60797C6.68308 5.57606 6.75523 5.60547 6.8088 5.65812C6.86237 5.71076 6.89303 5.7824 6.89414 5.8575V9.78961Z"
+                                                    fill="#969696"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="information-icon"></div>
+                                </div> -->
+                                <div class="curr-price">
+                                    <p>
+                                        <span class="price-category"
+                                            >Price:</span
+                                        >
+                                        <span class="price-big"> $24.99</span>
+                                    </p>
+                                </div>
+                                <!-- <div class="saved-money">
+                                    <p>
+                                        <span class="price-category"
+                                            >You Save:</span
+                                        >
+                                        <span class="price-small"
+                                            >$2.00 (11%)</span
+                                        >
+                                    </p>
+                                </div> -->
+                            </div>
+                            <div class="tax-and-import">
+                                <p>
+                                    No Import Fees Deposit & $15.56 Shipping to
+                                    Israel
+                                    <span class="details"
+                                        ><a href="#" class="red-hover"
+                                            >Details</a
+                                        ></span
+                                    >
+                                </p>
+                            </div>
+                            <!-- <div class="color">
+                                <p>Color: <strong>A</strong></p>
+                            </div>
+                            <div class="item-chooser align-row">
+                                <div
+                                    class="item-chooser1__container align-row item-box"
+                                >
+                                    <img
+                                        src="./assets/images/item1.jpg"
+                                        alt=""
+                                    />
+                                    <div class="price price-1">$15.99</div>
+                                </div>
+                                <div
+                                    class="item-chooser2__container align-row item-box"
+                                >
+                                    <img
+                                        src="./assets/images/item2.jpg"
+                                        alt=""
+                                    />
+                                    <div
+                                        class="price-container price second-item price-2"
+                                    >
+                                        <p>1 option from</p>
+                                        <div class="price-second-item">
+                                            $39.99
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <table class="more-info-container">
+                                <tbody>
+                                    <tr class="toy-figure align-row">
+                                        <td class="title">
+                                            <strong>Cartoon Character</strong>
+                                        </td>
+                                        <td class="description">Pikachu</td>
+                                    </tr>
+                                    <tr class="brand align-row">
+                                        <td class="title">
+                                            <strong>Toy figure type</strong>
+                                        </td>
+                                        <td class="description">Stuffed Toy</td>
+                                    </tr>
+                                    <tr class="age align-row">
+                                        <td class="title">
+                                            <strong
+                                                >Brand</strong>
+                                        </td>
+                                        <td class="description">Pokemon</td>
+                                    </tr>
+                                    <tr class="color-description align-row">
+                                        <td class="title">
+                                            <strong>Item Dimensions LxWxH</strong>
+                                        </td>
+                                        <td class="description">10.5 x 4 x 7 inches</td>
+                                    </tr>
+                                    <tr class="material align-row">
+                                        <td class="title">
+                                            <strong>Age Range (Description)</strong>
+                                        </td>
+                                        <td class="description">24 months to 300 months</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <hr />
+
+                        <div class="main__about-item">
+                            <div class="about-item__header">
+                                <h4>About this item</h4>
+                                <ul class="about-item__list">
+                                    <li class="about-list-el">
+                                        Cute and cuddly 8" Pokémon Pikachu plush stuffed animal is a must have for all Pokémon fans!
+                                    </li>
+                                    <li class="about-list-el">
+                                        This Super soft plush figure is great to take wherever you go!
+                                    </li>
+                                    <li class="about-list-el">
+                                        The Pikachu plush toy is inspired by Pokémon anime, trading cards, Let's go! and Nintendo video games series!
+                                    </li>
+                                    <li class="about-list-el">
+                                        Makes a great gift for fans of Pokémon - your favorite Pokémon character is waiting for you!
+                                    </li>
+                                    <li class="about-list-el">
+                                        Officially licensed Pokémon merchandise by wicked cool toys. Polyester. Measures: 10" to top of ear. Ages: 2+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="buy-and-share-container align-col">
+                        <div class="main__buy-item-container">
+                            <div class="price-big">$24.99</div>
+                            <div class="tax-and-import">
+                                <p>
+                                    No Import Fees Deposit & $15.56 Shipping to
+                                    Israel
+                                </p>
+                            </div>
+                            <div class="more-details">
+                                <a href="#">Details</a>
+                            </div>
+                            <div class="delivery-info align-row">
+                                <span class="title"
+                                    >This item ships to <strong>Israel</strong>
+                                </span>
+                            </div>
+                            <div class="fast-delivery-info">
+                                <p>
+                                    FREE delivery 
+                                    <strong>Monday, April 25</strong> <br> if you spend $49 on eligible items. Order
+                                    within
+                                    <span class="green-txt">8 hrs 18 mins</span>
+                                </p>
+                            </div>
+                            <div class="is-deliver align-row is-deliver-main">
+                                <img
+                                    src="./assets/images/location.png"
+                                    alt=""
+                                    class="location"
+                                />
+                                <div class="align-col deliver-txt">
+                                    <a href="#" class="red-hover"
+                                        >Deliver to Israel</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="stock-info">
+                                <p class="green-txt">In Stock.</p>
+                            </div>
+                            <div class="quantity">
+                                <label for="qty" id="qty"></label>
+                                <select name="qty" id="qty">
+                                    <option selected="selected" value="1">
+                                        1
+                                    </option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                </select>
+                            </div>
+                            <a href="#">
+                                <div class="btn btn-yellow">Add to Cart</div>
+                            </a>
+                            <a href="#">
+                                <div class="btn btn-orange">Buy Now</div>
+                            </a>
+                            <div class="secure align-row">
+                                <img
+                                    src="./assets/images/lock.png"
+                                    alt=""
+                                    class="lock"
+                                />
+                                <a href="#" class="blue-color red-hover">
+                                    Secure transaction
+                                </a>
+                            </div>
+                            <div class="ship-sold-container">
+                                <div class="ship-info">
+                                    <div class="ships-from align-row">
+                                        <span class="header">Ships from</span>
+                                        <span class="info">Amazon</span>
+                                    </div>
+                                </div>
+                                <div class="sold-info">
+                                    <div class="sold-by align-row">
+                                        <span class="header">Sold by</span>
+                                        <a href="#"
+                                            ><span
+                                                class="info blue-color red-hover"
+                                            >
+                                                River Colony Trading</span
+                                            ></a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="return-policy">
+                                <p>
+                                    Return policy:
+                                    <a
+                                        href="#"
+                                        class="return-policy-link blue-color red-hover"
+                                        >Eligible for Return, Refund or
+                                        Replacement within 30 days of receipt</a
+                                    >
+                                </p>
+                            </div>
+
+                            <div class="checkbox align-row">
+                                <label
+                                    for="gift-container"
+                                    class="align-row checkbox-gift"
+                                >
+                                    <input
+                                        type="checkbox"
+                                        name="gift"
+                                        id="gift"
+                                        value="gift"
+                                    />
+                                    <span
+                                        >Add a gift receipt for easy
+                                        returns</span
+                                    >
+                                </label>
+                            </div>
+
+                            <hr />
+                            <a href="#" class="add-to-list-link">
+                                <div class="add-to-list list-btn">
+                                    Add to list
+                                </div>
+                            </a>
+                        </div>
+                        <div class="share-container align-row">
+                            <span>Share</span>
+                            <a href="mailto:" class="social-mail">
+                                <img src="./assets/images/mail.png" alt="" />
+                            </a>
+                            <a href="#" class="social-facebook">
+                                <img
+                                    src="./assets/images/facebook.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="#" class="social-twitter">
+                                <img src="./assets/images/twitter.png" alt="" />
+                            </a>
+                            <a href="#" class="social-pinterest">
+                                <img
+                                    src="./assets/images/pinterest.png"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </main>
+
+                <hr class="desktop-only-sep" />
+
+                <div class="align-row freq-bought">
+                    <section class="align-col">
+                        <h3>Buy it with</h3>
+                        <div class="align-row">
+                            <div class="freq-img-container align-row">
+                                <a href="#">
+                                    <img
+                                        src="./assets/images/freq-bought-pika.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <span class="plus">+</span>
+                                <a href="#">
+                                    <img
+                                        src="./assets/images/freq-bought-puppet.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <span class="plus">+</span>
+                                <a href="#">
+                                    <img
+                                        src="./assets/images/freq-bought-poka.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                            <div class="price-and-add align-col">
+                                <div class="price-container">
+                                    <span class="price-category"
+                                        >Total price:</span
+                                    >
+                                    <span class="price-big"> $52.95</span>
+                                </div>
+                                <a href="#">
+                                    <div class="btn btn-yellow">
+                                        Add all three to Cart
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="shipping-info align-row">
+                            <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 12 12"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M6 0.210938C2.78906 0.210938 0.1875 2.81438 0.1875 6.02344C0.1875 9.2325 2.78906 11.8359 6 11.8359C9.21094 11.8359 11.8125 9.23438 11.8125 6.02344C11.8125 2.8125 9.21094 0.210938 6 0.210938ZM6 1.99945C6.22107 1.99945 6.43717 2.06501 6.62098 2.18783C6.80479 2.31064 6.94805 2.48521 7.03265 2.68945C7.11725 2.89369 7.13939 3.11843 7.09626 3.33525C7.05313 3.55207 6.94668 3.75123 6.79036 3.90755C6.63404 4.06386 6.43488 4.17032 6.21806 4.21344C6.00124 4.25657 5.7765 4.23444 5.57226 4.14984C5.36802 4.06524 5.19346 3.92198 5.07064 3.73817C4.94782 3.55436 4.88227 3.33825 4.88227 3.11719C4.88227 2.82075 5.00003 2.53645 5.20964 2.32683C5.41926 2.11721 5.70356 1.99945 6 1.99945V1.99945ZM6.89414 9.78961C6.89303 9.86471 6.86237 9.93635 6.8088 9.98899C6.75523 10.0416 6.68308 10.0711 6.60797 10.0709H5.38289C5.34618 10.0708 5.30985 10.0634 5.276 10.0492C5.24216 10.035 5.21147 10.0142 5.18571 9.98802C5.15994 9.96187 5.13962 9.93087 5.12592 9.89681C5.11221 9.86275 5.10539 9.82632 5.10586 9.78961V5.8575C5.10543 5.8208 5.11226 5.78438 5.12598 5.75033C5.1397 5.71629 5.16002 5.6853 5.18578 5.65915C5.21153 5.63301 5.24221 5.61222 5.27604 5.59799C5.30987 5.58376 5.34619 5.57637 5.38289 5.57625H6.60797C6.68308 5.57606 6.75523 5.60547 6.8088 5.65812C6.86237 5.71076 6.89303 5.7824 6.89414 5.8575V9.78961Z"
+                                    fill="#007185"
+                                />
+                            </svg>
+                            <p>
+                                These items are shipped from and sold by
+                                different sellers.
+                                <a href="#" class="blue-color">Show details</a>
+                            </p>
+                        </div>
+                        <div class="checkbox align-row">
+                            <label
+                                for="freq-bought-item-1"
+                                class="align-row freq-bought-item-1"
+                            >
+                                <input
+                                    checked
+                                    type="checkbox"
+                                    name="freq-bought-item-1"
+                                    id="freq-bought-item-1"
+                                    value="freq-bought-item-1"
+                                />
+                                <span
+                                    ><strong>This item:</strong> Pokemon Pikachu 8" Plush - Officially Licensed and Stuffed Animal Material</span
+                                >
+                                <span>
+                                    <span class="price-big"> $24.99</span>
+                                    <span
+                                        >Get it as soon as
+                                        <strong>Monday, Apr 25</strong> FREE Shipping on orders over $49 shipped by Amazon</span
+                                    >
+                                </span>
+                            </label>
+                        </div>
+                        <div class="checkbox align-row">
+                            <label
+                                for="freq-bought-item-2"
+                                class="align-row freq-bought-item-2"
+                            >
+                                <input
+                                    checked
+                                    type="checkbox"
+                                    name="freq-bought-item-2"
+                                    id="freq-bought-item-2"
+                                    value="freq-bought-item-2"
+                                />
+                                <a href="#" class="blue-color red-hover"
+                                    >Pokémon 8" Plush (Sword & Shield) - Grookey
+                                    </a
+                                >
+                                <span>
+                                    <span class="price-big"> $14.97</span>
+                                    <span> Get it as soon as <strong>Monday, Apr 25</strong>
+ 
+                                        FREE Shipping on orders over $49 shipped by Amazon </span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="checkbox align-row">
+                            <label
+                                for="freq-bought-item-3"
+                                class="align-row freq-bought-item-3"
+                            >
+                                <input
+                                    checked
+                                    type="checkbox"
+                                    name="freq-bought-item-3"
+                                    id="freq-bought-item-3"
+                                    value="freq-bought-item-3"
+                                />
+                                <a href="#" class="blue-color red-hover"
+                                    >Pokémon 4" Pokéball Plush - Soft Stuffed Poké Ball with Weighted Bottom
+                                    </a
+                                >
+                                <span>
+                                    <span class="price-big"> $14.97</span>
+                                    <span> Get it as soon as <strong>Wednesday, Apr 27</strong>
+ 
+                                        FREE Shipping on orders over $49 shipped by Amazon </span>
+                                </span>
+                            </label>
+                        </div>
+                    </section>
+                </div>
+
+                <hr />
+
+                <div class="align-row carousel">
+                    <section class="align-col">
+                        <h3>Explore more from Pokemon</h3>
+                        <div class="carousel__grid-container">
+                            <a href="#" class="arrow">
+                                <img src="./assets/images/arrow-left.png" />
+                            </a>
+                            <div class="item-card align-col">
+                                <a href="#">
+                                    <img
+                                        src="./assets/images/carousel1.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <div class="item-description">
+                                    <a
+                                        href="#"
+                                        class="description blue-color red-hover underline-hover"
+                                    >
+                                        Pokemon plush, Large 12" Inch Plush
+                                        Pikachu
+                                    </a>
+                                    <div class="item-rating align-row">
+                                        <div class="stars-container">
+                                            <a
+                                                href="#"
+                                                class="sprite-stars-img"
+                                            ></a>
+                                        </div>
+                                        <a href="#" class="blue-color red-hover"
+                                            >4,427</a
+                                        >
+                                    </div>
+                                    <div class="item-price align-row">
+                                        <span class="price-big">$29.99</span>
+                                        <div class="amazon-prime"></div>
+                                    </div>
+                                    <span class="fast-shipping"></span>
+                                    <span class="shipping-cost"></span>
+                                </div>
+                            </div>
+                            <div class="item-card align-col">
+                                <a href="#">
+                                    <img
+                                        src="./assets/images/carousel2.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <div class="item-description">
+                                    <a
+                                        href="#"
+                                        class="description blue-color red-hover underline-hover"
+                                    >
+                                        Pokemon Eevee and Pikachu 2 Pack Plush Stuffed Animals 8 Inch
+                                    </a>
+                                    <div class="item-rating align-row">
+                                        <div class="stars-container">
+                                            <a
+                                                href="#"
+                                                class="sprite-stars-img"
+                                            ></a>
+                                        </div>
+                                        <a href="#" class="blue-color red-hover"
+                                            >1,781</a
+                                        >
+                                    </div>
+                                    <div class="item-price align-row">
+                                        <span class="price-big">$39.99</span>
+                                        <div class="amazon-prime"></div>
+                                    </div>
+                                    <span class="fast-shipping"></span>
+                                    <span class="shipping-cost"></span>
+                                </div>
+                            </div>
+                            <div class="item-card align-col">
+                                <a href="#">
+                                    <img
+                                        src="./assets/images/carousel3.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <div class="item-description">
+                                    <a
+                                        href="#"
+                                        class="description blue-color red-hover underline-hover"
+                                    >
+                                        Pokemon Pickachu Easter 8" Plush - Stuffed Animal with Poke Puff Easter Egg - Great...
+                                    </a>
+                                    <div class="item-rating align-row">
+                                        <div class="stars-container">
+                                            <a
+                                                href="#"
+                                                class="sprite-stars-img"
+                                            ></a>
+                                        </div>
+                                        <a href="#" class="blue-color red-hover"
+                                            >210</a
+                                        >
+                                    </div>
+                                    <div class="item-price align-row">
+                                        <span class="price-big">$16.99</span>
+                                        <div class="amazon-prime"></div>
+                                    </div>
+                                    <span class="fast-shipping"></span>
+                                    <span class="shipping-cost"></span>
+                                </div>
+                            </div>
+                            <div class="item-card align-col">
+                                <a href="#">
+                                    <img
+                                        src="./assets/images/carousel4.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <div class="item-description">
+                                    <a
+                                        href="#"
+                                        class="description blue-color red-hover underline-hover"
+                                    >
+                                    Pokemon Pickachu Plush Stuffed Animal - Winking - Large 12"
+                                    </a>
+                                    <div class="item-rating align-row">
+                                        <div class="stars-container">
+                                            <a
+                                                href="#"
+                                                class="sprite-stars-img"
+                                            ></a>
+                                        </div>
+                                        <a href="#" class="blue-color red-hover"
+                                            >1,072</a
+                                        >
+                                    </div>
+                                    <div class="item-price align-row">
+                                        <span class="price-big">$28.03</span>
+                                        <div class="amazon-prime"></div>
+                                    </div>
+                                    <span class="fast-shipping"></span>
+                                    <span class="shipping-cost"></span>
+                                </div>
+                            </div>
+                            <div class="item-card align-col">
+                                <a href="#">
+                                    <img
+                                        src="./assets/images/carousel5.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <div class="item-description">
+                                    <a
+                                        href="#"
+                                        class="description blue-color red-hover underline-hover"
+                                    >
+                                    Pokemon Pickachu 8" Plush  with Heart Poke Ball - Officialy Licensed Stuffed Animal...
+                                    </a>
+
+                                    <div class="item-price align-row">
+                                        <span class="price-big">$16.99</span>
+                                        <div class="amazon-prime"></div>
+                                    </div>
+                                    <span class="fast-shipping"></span>
+                                    <span class="shipping-cost"></span>
+                                </div>
+                            </div>
+                            <div class="item-card align-col">
+                                <a href="#">
+                                    <img
+                                        src="./assets/images/carousel6.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <div class="item-description">
+                                    <a
+                                        href="#"
+                                        class="description blue-color red-hover underline-hover"
+                                    >
+                                    Pokemon 8" Pickachu with Flower Plush - Officialy Licensed Stuffed Animal Toy
+                                    </a>
+                                    <div class="item-rating align-row">
+                                        <div class="stars-container">
+                                            <a
+                                                href="#"
+                                                class="sprite-stars-img"
+                                            ></a>
+                                        </div>
+                                        <a href="#" class="blue-color red-hover"
+                                            >302</a
+                                        >
+                                    </div>
+                                    <div class="item-price align-row">
+                                        <span class="price-big">$19.99</span>
+                                        <div class="amazon-prime"></div>
+                                    </div>
+                                    <span class="fast-shipping"></span>
+                                    <span class="shipping-cost"></span>
+                                </div>
+                            </div>
+                            <div class="item-card align-col">
+                                <a href="#">
+                                    <img
+                                        src="./assets/images/carousel7.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <div class="item-description">
+                                    <a
+                                        href="#"
+                                        class="description blue-color red-hover underline-hover"
+                                    >
+                                    Pokemon Pichu Plush Stuffed Animal Toy - 8" - Age 2+
+                                    </a>
+                                    <div class="item-rating align-row">
+                                        <div class="stars-container">
+                                            <a
+                                                href="#"
+                                                class="sprite-stars-img"
+                                            ></a>
+                                        </div>
+                                        <a href="#" class="blue-color red-hover"
+                                            >1,721</a
+                                        >
+                                    </div>
+                                    <div class="item-price align-row">
+                                        <span class="price-big">$21.19</span>
+                                        <div class="amazon-prime"></div>
+                                    </div>
+                                    <span class="fast-shipping"></span>
+                                    <span class="shipping-cost"></span>
+                                </div>
+                            </div>
+                            <div class="arrow">
+                                <img src="./assets/images/arrow-right.png" />
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <script src="./scripts/app.js"></script>
+    </body>
 </html>

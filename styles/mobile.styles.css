@@ -1,0 +1,123 @@
+@media (max-width: 1440px) {
+    .navbar-bottom-secondary-el:last-child,
+    .item-card:nth-last-child(2) {
+        display: none;
+    }
+
+    .main__product-description-container {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1280px) {
+    .navbar-bottom-secondary-el:nth-last-child(2),
+    .item-card:nth-last-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .breadcrumbs-container,
+    .navbar__bottom-secondary,
+    .desktop-only,
+    .main__preview-imgs,
+    .language {
+        display: none;
+    }
+
+    .deliver-mobile-only {
+        display: block;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(min-content, max-content);
+    }
+
+    .main__big-img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .main__big-img-container img {
+        align-self: center;
+    }
+}
+
+.item-card:nth-last-child(4),
+#search-filter {
+    display: none;
+}
+
+input#text {
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+}
+
+.freq-bought-item-1,
+.freq-bought-item-2 {
+    flex-direction: column;
+}
+
+.carousel__grid-container {
+    grid-template-columns: 0.25fr repeat(4, 1fr) 0.25fr;
+}
+
+@media (max-width: 1000px) {
+    .item-card:nth-last-child(5),
+    .sign-in,
+    .returns-and-orders,
+    .search-bar {
+        display: none;
+    }
+
+    .grid-container {
+        grid-template-rows: 500px repeat(2, auto);
+    }
+
+    .mobile-only {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .item-card:nth-last-child(6) {
+        display: none;
+    }
+
+    .carousel__grid-container {
+        grid-template-columns: 0.25fr repeat(2, 1fr) 0.25fr;
+    }
+
+    .content-container {
+        margin: 0 5rem;
+    }
+}
+
+@media (max-width: 510px) {
+    .item-card:nth-last-child(7),
+    .freq-bought,
+    .desktop-only-sep {
+        display: none;
+    }
+
+    .grid-container {
+        grid-template-rows: 200px repeat(2, auto);
+    }
+
+    .carousel {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carousel__grid-container {
+        grid-template-columns: 0.25fr 1fr 0.25fr;
+    }
+}
